@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>VSTravel - Travel Now</title>
+	<link rel='stylesheet' href='../css/travel.css'>
+</head>
+<body class="travel-page">
+
+    <header id="main-header">
+        <div class="logo logo-flex">
+        <img src="../assets/images/globe.png" alt="VSTravel Globe Logo" class="logo-globe">
+        <span class="logo-text">VSTravel</span>
+        </div>
+        <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul>
+			<li><a href='home.html'>Home</a></li>
+			<li><a href='destination.html'>Destination</a></li>
+			<li><a href='contact.html'>Contact Us</a></li>
+			<li><a href='about.html'>About Us</a></li>
+			<li><a href='travel.html' class='active'>Travel Now</a></li>
+        </ul>
+        </nav>
+    </header>
+
+	<main>
+
+		<section class='travel-hero-img'>
+			<img src='../assets/testAssets/pexels-oidonnyboy-3857215.jpg' alt='Book Your Trip Now' class='travel-hero-bg'>
+			<div class='travel-hero-overlay'></div>
+			<div class='travel-hero-title'>Book Your Trip Now</div>
+		</section>
+
+		<section class='travel-section-title-container'>
+			<h1>VSTravel Booking Form</h1>
+		</section>
+
+		<section class='booking-form-section'>
+			<div class='booking-form-bg'></div>
+			<form class='booking-form'>
+
+				<div class='form-row'>
+					<div class='form-group name-group'>
+						<label for='firstName'>First Name<span class='required'>*</span></label>
+						<input type='text' id='firstName' name='firstName' placeholder='First Name' required>
+						<div class='error-message' id='firstNameError'></div>
+						<label for='lastName'>Last Name<span class='required'>*</span></label>
+						<input type='text' id='lastName' name='lastName' placeholder='Last Name' required>
+						<div class='error-message' id='lastNameError'></div>
+					</div>
+					<div class='form-group why-travel'>
+						<label>Why Travel With Us?</label>
+						<ul class='why-list'>
+							<li>🚀 Quick & Easy Booking</li>
+							<li>🧳 Curated Domestic Packages</li>
+							<li>⭐ Trusted Travel Experts</li>
+							<li>🗓️ Flexible Dates</li>
+							<li>🙌 Personalized Support</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class='form-row'>
+					<div class='form-group'>
+						<label for='phone'>Phone Number<span class='required'>*</span></label>
+						<input type='tel' id='phone' name='phone' pattern='[0-9]+' placeholder='#### ### ###' required inputmode='numeric'>
+						<div class='error-message' id='phoneError'></div>
+					</div>
+					<div class='form-group'>
+						<label for='participants'>Total Participant<span class='required'>*</span></label>
+						<div class='participant-input-group'>
+							<button type='button' class='participant-btn decrement' aria-label='Decrease participants'>-</button>
+							<input type='text' id='participants' name='participants' class='participant-input' value='1' required pattern='[0-9]+' inputmode='numeric'>
+							<button type='button' class='participant-btn increment' aria-label='Increase participants'>+</button>
+						</div>
+						<div class='error-message' id='participantError'></div>
+					</div>
+				</div>
+
+				<div class='form-row'>
+					<div class='form-group'>
+						<label for='destination'>Destination<span class='required'>*</span></label>
+						<select id='destination' name='destination' required>
+							<option value=''>Select destination</option>
+							<option value='Bali'>Bali - Rp5,500,000</option>
+							<option value='Raja Ampat'>Raja Ampat - Rp15,000,000</option>
+							<option value='Mount Bromo'>Mount Bromo - Rp2,750,000</option>
+							<option value='Yogyakarta'>Yogyakarta - Rp3,500,000</option>
+							<option value='Labuan Bajo'>Labuan Bajo - Rp12,500,000</option>
+							<option value='Lombok'>Lombok - Rp5,700,000</option>
+						</select>
+					</div>
+				</div>
+
+				<div class='form-row'>
+					<div class='form-group'>
+						<label for='departure'>Departure Date<span class='required'>*</span></label>
+						<input type='date' id='departure' name='departure' required>
+					</div>
+					<div class='form-group'>
+						<label for='return'>Return Date<span class='required'>*</span></label>
+						<input type='date' id='return' name='return' required>
+						<div class='error-message' id='dateError'></div>
+					</div>
+				</div>
+
+				<div class='form-row'>
+					<div class='form-group checkbox-group'>
+						<label for='terms' class='terms-label'><input type='checkbox' id='terms' name='terms' required>I have read and agree to the Terms and Agreements</label>
+					</div>
+				</div>
+
+				<div id='totalPrice' class='total-price'></div>
+				<div id='formGeneralError' class='error-message'></div>
+				<button type='submit' class='book-now-btn'>Book Now</button>
+
+			</form>
+
+			<div id='bookingModal' class='modal hidden'>
+				<div class='modal-content'>
+					<h3 id='bookingModalTitle'>Are you sure to book this package?</h3>
+					<p id='bookingModalDesc'></p>
+					<div class='modal-actions'>
+						<button id='bookingYesBtn' class='modal-btn yes'>Yes</button>
+						<button id='bookingNoBtn' class='modal-btn no'>No</button>
+					</div>
+				</div>
+			</div>
+
+			<div id='bookingStatusModal' class='modal hidden'>
+				<div class='modal-content'>
+					<p id='bookingStatusMsg'></p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/images/globe.png" alt="VSTravel Logo" class="footer-logo-img">
+                <h3>VSTravel</h3>
+                <p>Explore the world with comfort and elegance</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/Instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/X.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:headoffice@vstravel.com" class="footer-link">headoffice@vstravel.com</a> (Head Office)</p>
+                <p>Phone: <a href="tel:+622112345678" class="footer-link">+62 21 1234 5678</a> (Head Office)</p>
+                <p><a href="Contact.html" class="footer-link">See all offices →</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="footer-bottom">
+        <p>Copyright &copy; 2025 VSTravel. All Rights Reserved.</p>
+    </div>
+
+	<script src='../script/main.js'></script>
+	<script src='../script/travel-destination.js'></script>
+	<script src='../script/travel-date.js'></script>
+
+</body>
+</html>

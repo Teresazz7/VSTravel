@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSTravel - Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="logo logo-flex">
+        <img src="../assets/images/globe.png" alt="VSTravel Globe Logo" class="logo-globe">
+        <span class="logo-text">VSTravel</span>
+        </div>
+        <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul>
+			<li><a href='home.html' class='active'>Home</a></li>
+			<li><a href='destination.html'>Destination</a></li>
+			<li><a href='contact.html'>Contact Us</a></li>
+			<li><a href='about.html'>About Us</a></li>
+			<li><a href='travel.html'>Travel Now</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="video-section">
+            <div class="video-overlay">
+            <h1>Welcome to VSTravel</h1>
+            <div class='typewriter'></div>
+            </div>
+            <video autoplay muted loop playsinline>
+            <source src="../assets/testAssets/videoplayback (online-video-cutter).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <div class="section-gap"></div>
+        <section class="brief-section">
+            <div class="container">
+            <div class="brief-content">
+                <h2>Brief Introduction</h2>
+                <p>
+                Founded in 2020, VSTravel has become one of Indonesia's top travel agencies, offering premium travel experiences with curated packages and exceptional service. From pristine beaches to cultural wonders, we ensure every journey is seamless, luxurious, and unforgettable.
+                </p>
+                <a href="About.html" class="btn-about">Find More About Us</a>
+            </div>
+            </div>
+        </section>
+        <div class="section-gap"></div>
+
+
+        <section class="popular">
+        <div class="container">
+            <h4 class="section-subtitle">THIS MONTH</h4> 
+            <h2>Most Popular Destinations</h2>
+            <p class="popular-description">
+            Explore our most beloved destinations around the world that promise unforgettable experiences and breathtaking beauty
+            </p>
+            <div class="section-line"></div> 
+            <div class="destinations-grid">
+
+                <div class='destination-card'>
+                    <img src='../assets/testAssets/pexels-freestockpro-2166559.jpg' alt='Bali' />
+                    <div class='card-info'>
+                        <h3>Bali</h3>
+                        <p class='card-description'>Island of Tropical Beauty</p>
+                        <div class='card-hidden'>
+                            <p>Start from Rp5.500.000</p>
+                            <a href='#' class='btn-card' onclick="openOverlay('bali')">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vs-custom-overlay" id="overlay-bali">
+                    <div class="overlay-content">
+                        <span class="close-btn" onclick="closeOverlay('bali')">&times;</span>
+                        <div class="overlay-layout">
+                            <div class="overlay-img-wrapper">
+                                <img src="../assets/testAssets/pexels-freestockpro-2166559.jpg" alt="Bali View 1" class="overlay-img active">
+                                <img src="../assets/testAssets/pexels-stijn-dijkstra-1306815-2499699.jpg" alt="Bali View 2" class="overlay-img">
+                            </div>
+                            <div class="overlay-text">
+                                <h3>Bali — Bali Province</h3>
+                                <p>Bali is renowned for its breathtaking beaches, lush landscapes, and rich cultural heritage, offering the perfect blend of relaxation, adventure, and unforgettable experiences.</p>
+                                <p>Start from Rp5.500.000</p>
+                                <a href="travel.html" class="btn-see-all2">Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class='destination-card'>
+                    <img src='../assets/testAssets/pexels-muhammad-akfi-1188081-2260031.jpg' alt='Yogyakarta' />
+                    <div class='card-info'>
+                        <h3>Yogyakarta</h3>
+                        <p class='card-description'>Heart of Javanese Culture</p>
+                        <div class='card-hidden'>
+                            <p>Start from Rp3.500.000</p>
+                            <a href='#' class='btn-card' onclick="openOverlay('yogyakarta')">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vs-custom-overlay" id="overlay-yogyakarta">
+                    <div class="overlay-content">
+                        <span class="close-btn" onclick="closeOverlay('yogyakarta')">&times;</span>
+                        <div class="overlay-layout">
+                            <div class="overlay-img-wrapper">
+                                <img src="../assets/testAssets/pexels-muhammad-akfi-1188081-2260031.jpg" alt="Yogyakarta View 1" class="overlay-img active">
+                                <img src="../assets/testAssets/pexels-mike-van-schoonderwalt-1884800-5505486.jpg" alt="Yogyakarta View 2" class="overlay-img">
+                            </div>
+                            <div class="overlay-text">
+                                <h3>Yogyakarta — Special Region of Yogyakarta</h3>
+                                <p>Home to ancient temples, royal palaces, and vibrant arts, Yogyakarta offers a perfect blend of heritage and modern charm.</p>
+                                <p>Start from Rp3.500.000</p>
+                                <a href="travel.html" class="btn-see-all2">Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class='destination-card'>
+                    <img src='../assets/testAssets/pexels-melson-dreams-349386037-19758796.jpg' alt='Raja Ampat' />
+                    <div class='card-info'>
+                        <h3>Raja Ampat</h3>
+                        <p class='card-description'>Pristine Earthly Paradise</p>
+                        <div class='card-hidden'>
+                            <p>Start from Rp15.000.000</p>
+                            <a href='#' class='btn-card' onclick="openOverlay('raja-ampat')">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="vs-custom-overlay" id="overlay-raja-ampat">
+                    <div class="overlay-content">
+                        <span class="close-btn" onclick="closeOverlay('raja-ampat')">&times;</span>
+                        <div class="overlay-layout">
+                            <div class="overlay-img-wrapper">
+                                <img src="../assets/testAssets/pexels-melson-dreams-349386037-19758796.jpg" alt="Raja Ampat View 1" class="overlay-img active">
+                                <img src="../assets/testAssets/pexels-stijn-dijkstra-1306815-2583852.jpg" alt="Raja Ampat View 2" class="overlay-img">
+                            </div>
+                            <div class="overlay-text">
+                                <h3>Raja Ampat — West Papua</h3>
+                                <p>Raja Ampat is famous for its crystal-clear waters, diverse marine life, and stunning island landscapes, making it a must-visit destination for nature lovers and diving enthusiasts.</p>
+                                <p>Start from Rp15.000.000</p>
+
+                                <a href="travel.html" class="btn-see-all2">Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-line"></div> 
+            <a href="destination.html" class="btn-see-all">See All Other Destinations</a>
+        </div>
+    </section>
+
+
+    <section class="branch-section">
+            <div class="branch-content">
+            <h4>DISCOVER</h4>
+            <h2>Our Branches</h2>
+            <img src="../assets/testAssets/ourbranches.png" alt="Indonesia Map" class="map-img">
+            <div class="branch-point jakarta" style="top: 60%; left: 32%;">Jakarta</div>
+            <div class="branch-point medan" style="top: 42%; left: 15%;">Medan</div>
+            <div class="branch-point surabaya" style="top: 62%; left: 42%;">Surabaya</div>
+            <div class="branch-point jakarta2" style="top: 70%; left: 32%;">Jakarta</div>
+            <a href="contact.html" class="btn-see-all">Discover</a>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/images/globe.png" alt="VSTravel Logo" class="footer-logo-img">
+                <h3>VSTravel</h3>
+                <p>Explore the world with comfort and elegance</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/Instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/X.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:headoffice@vstravel.com" class="footer-link">headoffice@vstravel.com</a> (Head Office)</p>
+                <p>Phone: <a href="tel:+622112345678" class="footer-link">+62 21 1234 5678</a> (Head Office)</p>
+                <p><a href="Contact.html" class="footer-link">See all offices →</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="footer-bottom">
+        <p>Copyright &copy; 2025 VSTravel. All Rights Reserved.</p>
+    </div>
+
+    <script src="../script/main.js"></script>
+    <script src="../script/destination-slideshow.js"></script>
+</body>
+</html>

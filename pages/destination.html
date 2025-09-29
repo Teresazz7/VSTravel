@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>VSTravel - Destination</title>
+	<link rel='stylesheet' href='../css/destination.css'>
+</head>
+<body class="destination-page">
+
+    <header id="main-header">
+        <div class="logo logo-flex">
+        <img src="../assets/images/globe.png" alt="VSTravel Globe Logo" class="logo-globe">
+        <span class="logo-text">VSTravel</span>
+        </div>
+        <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul>
+			<li><a href='home.html'>Home</a></li>
+			<li><a href='destination.html' class='active'>Destination</a></li>
+			<li><a href='contact.html'>Contact Us</a></li>
+			<li><a href='about.html'>About Us</a></li>
+			<li><a href='travel.html'>Travel Now</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+
+	<main>
+
+		<section class='destination-hero-img hero-img'>
+			<img src='../assets/testAssets/pexels-alesiakozik-6015746.jpg' alt='Explore Destinations' class='destination-hero-bg hero-bg'>
+			<div class='destination-hero-overlay hero-overlay'></div>
+			<div class='destination-hero-title hero-title'>Explore Our Destinations</div>
+		</section>
+
+		<section class='destination-section-title-container'>
+			<h1>VSTravel Destinations</h1>
+		</section>
+
+    
+        <section class="popular">
+        <div class="container">
+            <div class="destinations-grid">
+
+                <div class='destination-card'>
+                    <img src='../assets/testAssets/pexels-freestockpro-2166559.jpg' alt='Bali' />
+                    <div class='card-info'>
+                        <h3>Bali</h3>
+                        <p class='card-description'>Island of Tropical Beauty</p>
+                        <div class='card-hidden'>
+                            <p>Start from Rp5.500.000</p>
+                            <a href='#' class='btn-card' onclick="openOverlay('bali')">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vs-custom-overlay" id="overlay-bali">
+                    <div class="overlay-content">
+                        <span class="close-btn" onclick="closeOverlay('bali')">&times;</span>
+                        <div class="overlay-layout">
+                            <div class="overlay-img-wrapper">
+                                <img src="../assets/testAssets/pexels-freestockpro-2166559.jpg" alt="Bali View 1" class="overlay-img active">
+                                <img src="../assets/testAssets/pexels-stijn-dijkstra-1306815-2499699.jpg" alt="Bali View 2" class="overlay-img">
+                            </div>
+                            <div class="overlay-text">
+                                <h3>Bali — Bali Province</h3>
+                                <p>Bali is renowned for its breathtaking beaches, lush landscapes, and rich cultural heritage, offering the perfect blend of relaxation, adventure, and unforgettable experiences.</p>
+                                <p>Start from Rp5.500.000</p>
+                                <a href="travel.html" class="btn-see-all2">Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class='destination-card'>
+                    <img src='../assets/testAssets/pexels-muhammad-akfi-1188081-2260031.jpg' alt='Yogyakarta' />
+                    <div class='card-info'>
+                        <h3>Yogyakarta</h3>
+                        <p class='card-description'>Heart of Javanese Culture</p>
+                        <div class='card-hidden'>
+                            <p>Start from Rp3.500.000</p>
+                            <a href='#' class='btn-card' onclick="openOverlay('yogyakarta')">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vs-custom-overlay" id="overlay-yogyakarta">
+                    <div class="overlay-content">
+                        <span class="close-btn" onclick="closeOverlay('yogyakarta')">&times;</span>
+                        <div class="overlay-layout">
+                            <div class="overlay-img-wrapper">
+                                <img src="../assets/testAssets/pexels-muhammad-akfi-1188081-2260031.jpg" alt="Yogyakarta View 1" class="overlay-img active">
+                                <img src="../assets/testAssets/pexels-mike-van-schoonderwalt-1884800-5505486.jpg" alt="Yogyakarta View 2" class="overlay-img">
+                            </div>
+                            <div class="overlay-text">
+                                <h3>Yogyakarta — Special Region of Yogyakarta</h3>
+                                <p>Home to ancient temples, royal palaces, and vibrant arts, Yogyakarta offers a perfect blend of heritage and modern charm.</p>
+                                <p>Start from Rp3.500.000</p>
+                                <a href="travel.html" class="btn-see-all2">Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class='destination-card'>
+                    <img src='../assets/testAssets/pexels-melson-dreams-349386037-19758796.jpg' alt='Raja Ampat' />
+                    <div class='card-info'>
+                        <h3>Raja Ampat</h3>
+                        <p class='card-description'>Pristine Earthly Paradise</p>
+                        <div class='card-hidden'>
+                            <p>Start from Rp15.000.000</p>
+                            <a href='#' class='btn-card' onclick="openOverlay('raja-ampat')">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="vs-custom-overlay" id="overlay-raja-ampat">
+                    <div class="overlay-content">
+                        <span class="close-btn" onclick="closeOverlay('raja-ampat')">&times;</span>
+                        <div class="overlay-layout">
+                            <div class="overlay-img-wrapper">
+                                <img src="../assets/testAssets/pexels-melson-dreams-349386037-19758796.jpg" alt="Raja Ampat View 1" class="overlay-img active">
+                                <img src="../assets/testAssets/pexels-stijn-dijkstra-1306815-2583852.jpg" alt="Raja Ampat View 2" class="overlay-img">
+                            </div>
+                            <div class="overlay-text">
+                                <h3>Raja Ampat — West Papua</h3>
+                                <p>Raja Ampat is famous for its crystal-clear waters, diverse marine life, and stunning island landscapes, making it a must-visit destination for nature lovers and diving enthusiasts.</p>
+                                <p>Start from Rp15.000.000</p>
+                                <a href="travel.html" class="btn-see-all2">Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-line"></div> 
+        </div>
+    </section>
+
+
+    <section class="popular2">
+        <div class="container">
+            <div class="destinations-grid">
+
+				<div class='destination-card'>
+					<img src='../assets/testAssets/pexels-shaohong-yuan-89386072-29231588.jpg' alt='Mount Bromo' />
+					<div class='card-info'>
+						<h3>Mount Bromo</h3>
+						<p class='card-description'>Sunrise Above the Clouds</p>
+						<div class='card-hidden'>
+							<p>Start from Rp2.750.000</p>
+							<a href='#' class='btn-card' onclick="openOverlay('bromo')">See More</a>
+						</div>
+					</div>
+				</div>
+
+                <div class='vs-custom-overlay' id='overlay-bromo'>
+                    <div class='overlay-content'>
+                        <span class='close-btn' onclick="closeOverlay('bromo')">&times;</span>
+                        <div class='overlay-layout'>
+                            <div class='overlay-img-wrapper'>
+                                <img src='../assets/testAssets/pexels-shaohong-yuan-89386072-29231588.jpg' alt='Mount Bromo View 1' class='overlay-img active'>
+                                <img src='../assets/testAssets/pexels-daewi-hla-myint-158520970-29443442.jpg' alt='Mount Bromo View 2' class='overlay-img'>
+                            </div>
+                            <div class='overlay-text'>
+                                <h3>Mount Bromo — East Java</h3>
+                                <p>Mount Bromo is an iconic volcano offering breathtaking sunrise views above the clouds, attracting adventurers and photographers from around the world.</p>
+                                <p>Start from Rp2.750.000</p>
+                                <a href='travel.html' class='btn-see-all2'>Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+				<div class='destination-card'>
+					<img src='../assets/testAssets/pexels-pamanjoe-12376211.jpg' alt='Labuan Bajo' />
+					<div class='card-info'>
+						<h3>Labuan Bajo</h3>
+						<p class='card-description'>Home of Komodo Dragons</p>
+						<div class='card-hidden'>
+							<p>Start from Rp12.500.000</p>
+							<a href='#' class='btn-card' onclick="openOverlay('labuan-bajo')">See More</a>
+						</div>
+					</div>
+				</div>
+
+                <div class='vs-custom-overlay' id='overlay-labuan-bajo'>
+                    <div class='overlay-content'>
+                        <span class='close-btn' onclick="closeOverlay('labuan-bajo')">&times;</span>
+                        <div class='overlay-layout'>
+                            <div class='overlay-img-wrapper'>
+                                <img src='../assets/testAssets/pexels-pamanjoe-12376211.jpg' alt='Labuan Bajo View 1' class='overlay-img active'>
+                                <img src='../assets/testAssets/pexels-fabianreck-18340431.jpg' alt='Labuan Bajo View 2' class='overlay-img'>
+                            </div>
+                            <div class='overlay-text'>
+                                <h3>Labuan Bajo — East Nusa Tenggara</h3>
+                                <p>Labuan Bajo is the gateway to Komodo National Park, home of the legendary Komodo dragons and stunning island scenery.</p>
+                                <p>Start from Rp12.500.000</p>
+                                <a href='travel.html' class='btn-see-all2'>Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class='destination-card'>
+                    <img src='../assets/testAssets/pexels-roman-odintsov-4552437.jpg' alt='Lombok' />
+                    <div class='card-info'>
+                        <h3>Lombok</h3>
+                        <p class='card-description'>Marvels and Volcanic Adventures</p>
+                        <div class='card-hidden'>
+                            <p>Start from Rp5.700.000</p>
+                            <a href='#' class='btn-card' onclick="openOverlay('lombok')">See More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class='vs-custom-overlay' id='overlay-lombok'>
+                    <div class='overlay-content'>
+                        <span class='close-btn' onclick="closeOverlay('lombok')">&times;</span>
+                        <div class='overlay-layout'>
+                            <div class='overlay-img-wrapper'>
+                                <img src='../assets/testAssets/pexels-roman-odintsov-4552437.jpg' alt='Lombok View 1' class='overlay-img active'>
+                                <img src='../assets/testAssets/pexels-raw-image6-13966414.jpg' alt='Lombok View 2' class='overlay-img'>
+
+                            </div>
+                            <div class='overlay-text'>
+                                <h3>Lombok — West Nusa Tenggara</h3>
+                                <p>Lombok offers volcanic adventures, beautiful beaches, and a tranquil escape from the crowds, perfect for explorers and nature lovers.</p>
+                                <p>Start from Rp5.700.000</p>
+                                <a href='travel.html' class='btn-see-all2'>Travel Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-line"></div> 
+        </div>
+    </section>
+
+
+	</main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/images/globe.png" alt="VSTravel Logo" class="footer-logo-img">
+                <h3>VSTravel</h3>
+                <p>Explore the world with comfort and elegance</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/Instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/X.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="../assets/testAssets/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:headoffice@vstravel.com" class="footer-link">headoffice@vstravel.com</a> (Head Office)</p>
+                <p>Phone: <a href="tel:+622112345678" class="footer-link">+62 21 1234 5678</a> (Head Office)</p>
+                <p><a href="Contact.html" class="footer-link">See all offices →</a></p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="footer-bottom">
+        <p>Copyright &copy; 2025 VSTravel. All Rights Reserved.</p>
+    </div>
+	<script src='../script/main.js'></script>
+	<script src="../script/destination-slideshow.js"></script>
+</body>
+</html> 
